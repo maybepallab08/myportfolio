@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* BODY */
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #2c3e50;
+}
+body {
+  font-family: "Montserrat";
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* CONTAINER */
+
+.container {
+  padding: 0px 6% 80px 6%;
+}
+
+/* TITLE */
+.name {
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+.brand-logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-list {
+  font-weight: 510;
+  letter-spacing: 1.2px;
+  float: right;
+}
+.nav-list li {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  line-height: 80px;
+  font-size: 17px;
+  color: #2c3e50;
+}
+li a {
+  color: #2c3e50;
+}
+a:hover {
+  color: #2eb086;
+}
+.fa-guitar:hover {
+  color: #2eb086;
+}
+.checkbtn {
+  font-size: 50px;
+  float: right;
+  line-height: 80px;
+  margin: 16px 30px 0 0;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+.fa-guitar {
+  align-items: center;
+  padding: 16px 0 0 0;
+  color: #2c3e50;
+}
+/* INTRO*/
+
+.profile .name {
+  text-transform: none;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 200;
+  text-decoration: underline;
+  text-underline-offset: 30px;
+  margin-bottom: 50px;
+}
+
+#intro {
+  padding-top: 100px;
+}
+
+.profile-pic {
+  height: 280px;
+  border-radius: 50%;
+  background-color: #2c3e50;
+}
+.profile-pic-container {
+  text-align: center;
+}
+.profile {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  background-color: #fff;
+  color: #2c3e50;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.images img {
+  height: auto;
+  width: 38%;
+  border-radius: 5%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+/* SKILLS */
+
+#skills {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#skills .name {
+  color: white;
+}
+.skillimages {
+  height: 120px;
+  margin-bottom: 60px;
+}
+
+#skills > .skill:not(:last-child) {
+  margin-right: 100px;
+}
+
+/* CONTACT */
+
+#contact {
+  font-size: 20px;
+  background-color: #2c3e50;
+  text-align: center;
+}
+#contact .name {
+  color: #fff;
+}
+.contact-details {
+  background-color: #2c3e50;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+#send {
+  text-align: start;
+  margin: 0 15%;
+}
+#contact input {
+  width: 70%;
+  margin-bottom: 50px;
+  clear: both;
+  color: white;
+  font-size: 25px;
+  border-width: 0.1px;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border-color: rgb(223, 236, 230);
+}
+input::placeholder {
+  font-size: 25px;
+  color: rgb(135, 142, 149);
+  font-weight: lighter;
+}
+button {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 24px;
+  color: #2c3e50;
+  border-color: #fff;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 5% 7% 2% 7%;
+  text-align: center;
+  background-color: white;
+  color: #2c3e50;
+}
+svg {
+  padding: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 840px) {
+  .brand-logo {
+    font-size: 28px;
+  }
+  nav {
+    padding-left: 5px;
+  }
+  .checkbtn {
+    margin-right: 5px;
+  }
+  .name {
+    margin-bottom: 60px;
+  }
+  li > a {
+    font-size: 16px;
+    color: white;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    left: 0px;
+    text-align: center;
+    background-color: #2c3e50;
+    transition: all 0.4s;
+    left: -100%;
+  }
+  .nav-list li {
+    display: block;
+    margin: 80px 0;
+    line-height: normal;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+  a:hover,
+  .fa-guitar:hover {
+    color: #2eb086;
+  }
+
+  #portfolio {
+    padding-bottom: 10px;
+  }
+  .images > img {
+    height: auto;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto 25px auto;
+  }
+
+  #skills > .skill:not(:last-child) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .skillimages {
+    margin-bottom: 35px;
+  }
+  #intro {
+    padding-bottom: 35px;
+  }
+}

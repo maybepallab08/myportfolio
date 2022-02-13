@@ -12,16 +12,6 @@ body {
   font-family: "Montserrat";
   color: #2c3e50;
 }
-hr {
-  border-bottom: 0;
-  border-width: 5px;
-  border-color: #2c3e50;
-  border-radius: 10px;
-  width: 420px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
 /* Chrome, Safari, Edge, Opera */
 
 input::-webkit-outer-spin-button,
@@ -325,6 +315,9 @@ svg {
   .fa-guitar:hover {
     color: #2eb086;
   }
+   li > a:visited {
+    color: white;
+  }
 
   #portfolio {
     padding-bottom: 10px;
@@ -347,9 +340,4 @@ svg {
     padding-bottom: 35px;
   }
 }
-@media (max-width: 580px) {
-  hr {
-    width: 250px;
-    margin-bottom: 20px;
-  }
-}
+
